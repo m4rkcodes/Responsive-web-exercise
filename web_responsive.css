@@ -1,0 +1,39 @@
+.pic-container
+{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.first-pic
+{
+    height:100px;
+    width: 75px;
+    background-color:grey;
+}
+
+.second-pic
+{
+    height:100px;
+    width: 75px;
+    background-color:grey;
+}
+
+@media screen and (max-width: 600px)
+{
+    .pic-container
+    {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .first-pic
+    {
+        width: 200px;
+    }
+    .second-pic
+    {
+        width: 200px;
+    }
+}
